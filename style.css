@@ -1,0 +1,161 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: url("hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 76, 117, 0.75);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 10px;
+  color: #fff;
+  max-width: 900px;
+}
+
+.logo {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #0f4c75;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid #eaeaea;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* BOOKING */
+.booking {
+  background: #f7f9fb;
+  text-align: center;
+}
+
+/* FAQ */
+.faq details {
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0f4c75;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+}
+
+/* FLOATING BUTTONS */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.float-btn {
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #C13584; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+}
