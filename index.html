@@ -39,6 +39,59 @@
     </div>
   </section>
 
+  <section id="intake" class="intake">
+  <h2>Client Intake Form</h2>
+  <p class="section-lead">
+    Fill out this short form so we can better understand your tax needs before we speak.
+  </p>
+
+  <form name="tax-intake"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="tax-form">
+
+    <!-- Netlify required hidden input -->
+    <input type="hidden" name="form-name" value="tax-intake">
+
+    <!-- Honeypot (spam protection) -->
+    <p class="hidden">
+      <label>Don’t fill this out: <input name="bot-field"></label>
+    </p>
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label for="business">Type of Business</label>
+      <input id="business" name="business_type" type="text" placeholder="Sole trader, LLC, etc." required>
+    </div>
+
+    <div class="form-group">
+      <label for="first-time">Is this your first time filing?</label>
+      <select id="first-time" name="first_time_filing" required>
+        <option value="">Select one</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+
+    <button type="submit" class="btn">Submit Form</button>
+  </form>
+</section>
+
   <!-- BOOKING -->
   <section id="booking" class="booking">
     <h2>Book an Appointment</h2>
